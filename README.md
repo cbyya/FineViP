@@ -1,4 +1,52 @@
 # FineViP
-FineViP是一个专为视觉隐私研究设计的细粒度、多标签视觉隐私数据集，旨在解决视觉内容分享中的隐私测量不确定性问题 。该数据集包含25,206张图片 ，但由于链接失效等客观因素只剩下17670张图片还有有效的url,鉴于此，仅上传有url的图片。若有研究者需要可联系我。这些图片来自现有的隐私数据集（PicAlert等）、Flickr、Instagram以及必应（Bing）搜索，以确保类别的多样性和覆盖面 。此外该数据集构建时开展了一项广泛的跨文化隐私调查，建立反映用户关切的隐私分类体系，最终确定数据集的23个分类。为进一步应对标签标注的不确定性和标签一致性问题，数据集的构建采用了迭代优化标注指南、多轮重标注以及基于置信学习（Confident Learning）的模型辅助噪声标签检测与校正等方法
+**FineViP** is a **Fine**-grained, multi-label **Vi**sual **P**rivacy dataset designed to support research on visual privacy protection. 
 
-Google网盘链接在https://drive.google.com/drive/folders/19aAviYJdiVtoKSAjssYNr-qu8TmIFgAJ?usp=drive_link
+You can also download the dataset from [Google Drive](https://drive.google.com/drive/folders/19aAviYJdiVtoKSAjssYNr-qu8TmIFgAJ?usp=drive_link).
+
+## Images
+The images in this dataset are collected from existing privacy datasets [1-3], as well as public sources such as Flickr, Instagram, and Bing Search Engine, to ensure diversity and comprehensive coverage of privacy categories.
+
+Note: For ethical reasons, we only provide download links to ensure that image owners retain control over their content. The original dataset contains 24,783 images. Due to some expired links, this release includes URLs for the 17,670 images that remain accessible. Researchers who require access to the full dataset may contact me for further information.
+
+
+
+## Labels
+The dataset includes one public category and 22 fine-grained privacy categories with varying risk levels, as detailed in the following table. These categories are derived from a large-scale cross-cultural privacy survey, aiming to build a taxonomy that reflects real-world user privacy concerns.
+
+
+| Fine-grained Visual Privacy Labels|
+| -------- |
+| Public|
+| Personal Information_High	
+| Financial Information_High	
+| Sensitive Behaviors_High	
+| Sensitive Diseases_High	
+| Sensitive Location_High	
+| Sensitive Relationships_High	
+| Sensitive Occupations_High	
+| Religious Beliefs_High	
+| Sensitive Interests_High	
+| Personal Space_High	
+| Minors_High	
+| Personal Information_Low	
+| Financial Information_Low	
+| Sensitive Behaviors_Low	
+| Sensitive Diseases_Low	
+| Sensitive Location_Low	
+| Sensitive Relationships_Low	
+| Sensitive Occupations_Low	
+| Religious Beliefs_Low	
+| Sensitive Interests_Low	
+| Personal Space_Low	
+| Minors_Low
+
+
+
+
+## Reference
+[1] Sergej Zerr, Stefan Siersdorfer, Jonathon Hare, and Elena Demidova. Privacy-aware image classification and search. In Proceedings of the 35th international ACM SIGIR conference on Research and development in information retrieval, pages 35–44, 2012.
+
+[2]Tribhuvanesh Orekondy, Bernt Schiele, and Mario Fritz.
+Towards a visual privacy advisor: Understanding and predicting privacy risks in images. In Proceedings of the IEEE international conference on computer vision, pages 3686–3695, 2017.
+
+[3]Chenye Zhao, Jasmine Mangat, Sujay Koujalgi, Anna Squicciarini, and Cornelia Caragea. Privacyalert: A dataset for image privacy prediction. In Proceedings of the International AAAI Conference on Web and Social Media, volume 16, pages 1352–1361, 2022.
